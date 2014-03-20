@@ -2,10 +2,8 @@
 ## Eclipse
 #################
 *.[oa]
-bin/
+
 tmp/
-tmp/cache/
-tmp/template/
 
 
 #############
