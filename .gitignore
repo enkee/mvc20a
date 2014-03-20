@@ -1,4 +1,4 @@
-$ cat .gitignore
+cat .gitignore
 
 *.[oa]		# Ignora los archivos cuya extension inicia con "o" ó "a".
 #*~		# Ignora los archivos que comienzan con "~".
