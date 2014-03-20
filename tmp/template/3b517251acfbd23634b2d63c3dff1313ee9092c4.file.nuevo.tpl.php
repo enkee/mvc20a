@@ -43,7 +43,8 @@ post/nuevo" enctype="multipart/form-data">
 
         <tr>
             <td colspan="4">
-                Imagen: <input type="file" name="imagen" />
+                Image: 
+                  <input type="file" name="imagen" />
             </td>
         </tr>
     </table>
