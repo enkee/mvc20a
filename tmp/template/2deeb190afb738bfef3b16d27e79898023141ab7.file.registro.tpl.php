@@ -23,7 +23,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'version' => 'Smarty-3.1.8',
   'unifunc' => 'content_53146aa9b48092_13645216',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53146aa9b48092_13645216')) {function content_53146aa9b48092_13645216($_smarty_tpl) {?><h2>Registrar CETPRO</h2>
+<?php if ($_valid && !is_callable('content_53146aa9b48092_13645216')) {function content_53146aa9b48092_13645216($_smarty_tpl) {?>
+<h2>Registrar CETPROs</h2>
 
 <div class="well span5">
     <form name="form1" method="post" action="" class="form">
