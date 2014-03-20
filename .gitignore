@@ -1,11 +1,25 @@
-cat .gitignore
+#################
+## Eclipse
+#################
 
-*.[oa]		# Ignora los archivos cuya extension inicia con "o" ó "a".
-#*~		# Ignora los archivos que comienzan con "~".
-#*.a		# No rastrea archivos .a
-#!lib.a		# Pero si rastrea  lib.a.
-#/TODO		# solo ignora el archivo raiz TODO.
-#build/		# ignora todos los archivos del directorio /build
-#doc/*.txt	# ignora doc/notes.txt, pero no doc/server/arch.txt.
+bin/
+tmp/
 
-tmp/		# ignora todos los archivos de la carpeta tmp/
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
