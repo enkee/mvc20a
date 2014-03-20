@@ -30,7 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <input type="hidden" value="1" name="enviar" />
 
         <p>
-            <label>Nombre: </label>
+            <label>Nombri: </label>
             <input type="text" name="nombre" value="<?php echo (($tmp = @$_smarty_tpl->tpl_vars['datos']->value['nombre'])===null||$tmp==='' ? '' : $tmp);?>
 " />
         </p>

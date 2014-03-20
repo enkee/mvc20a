@@ -1,0 +1,11 @@
+$ cat .gitignore
+
+#*.[oa]		# Ignora los archivos cuya extension inicia con "o" ó "a".
+#*~		# Ignora los archivos que comienzan con "~".
+#*.a		# No rastrea archivos .a
+#!lib.a		# Pero si rastrea  lib.a.
+#/TODO		# solo ignora el archivo raiz TODO.
+#build/		# ignora todos los archivos del directorio /build
+#doc/*.txt	# ignora doc/notes.txt, pero no doc/server/arch.txt.
+
+tmp/		# ignora todos los archivos de la carpeta tmp/
