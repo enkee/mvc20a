@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'version' => 'Smarty-3.1.8',
   'unifunc' => 'content_53144a6edcd925_60004073',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53144a6edcd925_60004073')) {function content_53144a6edcd925_60004073($_smarty_tpl) {?><h2>Activaci&oacute;n de Cuenta</h2>
+<?php if ($_valid && !is_callable('content_53144a6edcd925_60004073')) {function content_53144a6edcd925_60004073($_smarty_tpl) {?><h2>Activaci&oacute;n de </h2>
 
 <p> </p>
 
