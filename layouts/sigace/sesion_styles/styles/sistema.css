@@ -1,0 +1,253 @@
+* {font: menu;}
+
+BODY {
+color:WindowText; 
+background-color: Background;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/0DJC52AJ/img/sistema.gif);
+background-repeat: no-repeat;
+margin: 0px;
+padding: 4px;} 
+
+P {
+text-align: justify;
+text-indent: 3em;
+margin-bottom: -1em;}
+
+.cap:first-letter {font-weight: bold;
+color: GrayText;
+font: caption;}
+
+H1 {
+font: caption;
+color: MenuText;}
+
+H2 {font: caption;
+color: MenuText;}
+
+.nota {font: small-caption;
+color: GrayText;
+text-align: center;
+text-indent: 0;
+border: 1px solid #CCCCCC;
+margin-bottom: 2em;
+margin-top: 3em;}
+
+HR {color: ActiveCaption;
+	height: 1px;}
+
+A {font: caption;}
+
+A:link {text-decoration: none; color: Background;}
+A:visited {text-decoration: none; color: Background;}
+A:hover {text-decoration: none; color: ButtonText;}
+A:active {text-decoration: none; color: ButtonText;}
+
+DIV#logo {
+width: 144px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/0DJC52AJ/img/logo.gif);
+	position: absolute;
+	top: 8px;
+	right: 1%;}
+
+DIV#home {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 0px;}
+
+DIV#css {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 72px;}
+
+DIV#manual {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 144px;}
+
+DIV#archivos {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 216px;}
+
+DIV#autor {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 288px;}
+
+.boton {width: 72px;
+	height: 24px;
+	padding: 0px;
+	margin: 0px;
+	border: 1px outset ThreeDShadow;}
+
+.boton TR TD {text-align: center;
+	vertical-align: middle;}
+
+DIV#contenido {background-color: Window;
+position: absolute;
+	top: 48px;
+	left: 0px;
+width: 75%;
+height: 400px;
+	padding: 8px;
+border: 2px inset ActiveBorder;
+overflow: auto;}
+
+DIV#select {background-color: InfoBackground;
+width: 130px;
+	position: absolute;
+	top: 48px;
+	left: 81%;
+padding: 4px;}
+
+DIV#select P {font-size: xx-small;
+color: Highlight;
+text-align: left;
+text-indent: 0px;}
+
+DIV#select P STRONG {font-size: x-small;
+color: Highlight;}
+
+IMG {border:none}
+
+.centrado {text-align: center;
+text-indent: 0px;}
+
+.derecha {text-align: right}
+
+/* Hoja de estilo del manual */
+
+BODY#manual {
+color:Highlight; 
+background-color: Background;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/0DJC52AJ/img/sistema.gif);
+background-repeat: no-repeat;
+margin: 0px;
+padding: 0px;}
+
+#manual DIV#logo {
+width: 144px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/0DJC52AJ/img/logo.gif);
+	position: absolute;
+	top: 8px;
+	right: 1%;}
+
+#manual DIV#home {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 0px;}
+
+#manual DIV#manual {width: 72px;
+	height: 24px;
+	background-color: ButtonFace;
+	position: absolute;
+	top: 6px;
+	left: 72px;}
+
+#manual DIV.barra {position: absolute;
+	left: 160px;
+	top: 8px;}
+
+#manual .barra TABLE TD#titulo {text-align: center;
+vertical-align: top;
+font: caption;
+color: CaptionText;
+padding-bottom: 4px; }
+
+#manual .barra TABLE TD.ico {
+width: 13px;
+background-color: InfoBackground;
+vertical-align: middle;
+}
+
+#manual .barra TABLE TD.prev-next {
+background-color: InfoBackground;
+font: menu;
+width: 64px;
+vertical-align: middle;
+}
+
+.cod {
+font: caption;
+text-align: left;
+line-height: 1.5em;
+text-indent: 0px;
+color: InfoText;
+background-color: InfoBackground;
+padding-left: 3em;}
+
+CODE {
+font: message-box;
+font-size:   x-small;
+color: Highlight;} 
+
+#manual #contenido A {
+text-decoration: none;
+color: HighlightText;
+background-color: Highlight;
+font-weight: bold;} 
+ 
+#manual #contenido A:hover, A:active {
+text-decoration: none;
+color: MenuText;
+background-color: Menu;
+font-weight: bold;}
+
+#manual #contenido DL, UL, OL, LI {
+font-size:   x-small;
+margin-left: 3em;}
+
+#manual #contenido TABLE {
+background-color: Menu;
+margin: 0px;
+text-indent: 0px;
+font-size: x-small;
+border: 3px ridge ActiveBorder;}
+
+#manual #contenido DT, DD, DL, TD, TH {
+font: Icon;}
+
+#manual #contenido TD {padding: 6px;}
+#manual #contenido TH {background-color: ActiveCaption; color: CaptionText;border-bottom:InactiveBorder solid 1px;padding:2px;}
+
+#manual #contenido .prop {background-color: InactiveCaption; 
+color: InactiveCaptionText;
+font-weight: bold;
+padding: 3px 6px; 
+border: solid InactiveBorder 1px;}
+
+#manual #contenido .val {background-color: menu; border: solid InactiveBorder 1px;padding: 4px;}
+#manual #contenido .def {border: solid InactiveBorder 1px;padding: 4px; background-color: menu;}
+
+#manual #contenido PRE {
+padding: 4px;
+}
+
+#manual #contenido DL {font: caption;}
+#manual #contenido DD {font-weight: normal;}
+
+#manual #contenido .temas {background-color: InactiveCaption;
+color: #FFFFFF;
+	border: 2px outset ActiveBorder;
+	text-align: center;
+	font-size: x-small;
+	padding: 6px;}
+
+#manual #contenido .temas A {
+background-color: transparent;
+color: ActiveCaption; 
+} 

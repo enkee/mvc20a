@@ -1,0 +1,289 @@
+/*===================== Principales ==========================*/
+body{
+	
+}
+body, html{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+#cuerpo{
+	margin:auto;
+	display:table;
+	width:100%;
+	height:100%;
+}
+#encabezado{
+	/*background-color:rgba(0,255,0,0.5);*/
+	display:table;
+	width:100%;
+	height:54px;
+	background-image:url(../img/textura_3.png), url(../img/motivo_2.png);
+	background-size:30px;
+	overflow:hidden;
+	/*display:none;*/
+}
+	#degradado0{
+		width:100%;
+		height:54px;
+		position:absolute;
+		z-index:-1;
+		background: linear-gradient(top, green , green 75%, transparent 100%);
+	}
+	
+	nav{
+		display:table;
+		width:100%;
+                height: 54px;
+		background-color:rgba(155,55,20,0.5);
+		background-image:url(../img/RED04-Bp.png);
+                background-size: auto 220%;
+                background-position: 107% center;
+		background-repeat:no-repeat;
+                vertical-align: middle;
+                float:left;
+                text-align: left;
+	}
+                #aplicacion{
+                        display:table-cell;
+                        height:54px;
+                        width: 120px;
+                        vertical-align: middle;
+                        text-align: center;
+                        font-family: arial;
+                        font-size: 25px;
+                        background-color:rgba(205,205,10,0.5);
+                        color: black;
+                        text-decoration: none;
+                }
+		#menu_p{
+                        display:table-cell;
+                        height: 54px;
+			font-size:12px;
+			padding:0px;
+			margin:0px;
+			color:white;
+			font-family:arial;
+                        text-align:left;
+			vertical-align:middle;
+			overflow:hidden;
+                        background-color:rgba(255,255,0,0.5);
+		}
+                    nav ul{
+                        display:table-cell;
+                        margin: 0px;
+                        padding: 0px;
+                        text-align: left;
+                        background-color:rgba(25,25,100,0.5);
+                    }
+			nav ul li{  
+				display:inline-block;
+				background-color:grey;
+				border-radius:8px;
+				margin-bottom:1px;
+				padding-left:5px;
+				padding-right:5px;
+			}
+			#fecha{
+				display:block;
+				font-family:arial;
+				font-size:10px;
+                                text-align: left;
+                                padding-left: 5px;
+			}
+			#invisible{
+				display:block;
+				height:0px;
+				width:190px;
+                                text-align: left;
+                        }
+	
+                        
+       #logotipo{
+                width: 220px;
+		display: table-cell;
+		background-color:rgba(204,102,204,0.5);
+	}
+		
+                #membrete{
+                    display:table;
+                    width: 220px;
+                    font-size:12px;
+                    color:white;
+                    font-family:arial;
+                    vertical-align:middle;
+                    background-color:rgba(204,0,204,0.5);
+                }
+                        #logo{
+                                display:inline-block;
+
+                        }
+                        #tipo{
+                                display: table-cell;
+                                width: 100%;
+                                font-family:arial;
+                                font-size:12px;
+                                background-color:rgba(255,255,0,0.5);
+                                vertical-align:middle;
+                                text-align:center;
+                                font-weight:bold;
+                                padding: 2px;
+                        }
+                
+       .usuario{
+                width: 220px;
+		display:table-cell;
+		background-color:rgba(0,102,204,0.5);
+                vertical-align: top;
+       }
+       
+       #login{
+                width: 400px;
+                display:table-cell;
+                background-color:rgba(0,102,204,0.5);
+                vertical-align: middle;
+       }	
+	
+                #data_user{
+                    display:table;
+                    height:54px;
+                    width:220px;
+                    font-size:12px;
+                    padding:0px;
+                    margin:0px;
+                    color:white;
+                    font-family:arial;
+                    vertical-align:middle;
+                    text-align:right;
+                    overflow:hidden;
+                    background-color:rgba(204,0,204,0.5);
+                }
+                        #foto{
+                                display:inline-block;
+                                height:40px;
+                                border:5px solid black;
+                                border-radius:10px;
+                                overflow:hidden;
+                                margin-right:2px;
+                                margin-left:2px;
+                                margin-bottom:3px;
+                                float: left;
+                                
+                        }
+                        #datos{
+                                display: table-cell;
+                                width: 100%;
+                                font-family:arial;
+                                font-size:12px;
+                                background-color:rgba(255,255,0,0.5);
+                                vertical-align:top;
+                                text-align:left;
+                                padding-left: 2px;
+                                padding-top: 2px;
+                        }
+#contenido{
+	display:table-row;
+	background-color:rgba(124,153,255,0.5);
+	height:100%;
+}
+	#contenedor{
+		display:table;
+		/*top:-36px;*/
+		width:100%;
+                text-align: left;
+		height:100%;
+	}
+		#menu{
+                        display:table;
+                        width:200px;
+                        vertical-align: top;
+                        text-align: left;
+			background-color:rgba(255,255,150,0.5);
+		}
+		#principal{
+			display:table-cell;
+                        vertical-align: top;
+			width:100%;
+			background-color:rgba(255,0,51,0.5);
+			text-align:center;
+			margin: auto;
+		}
+                .hoja{
+                    display:inline-table;
+                    vertical-align: top;
+                    background-color:rgba(255,255,150,0.5);
+                    text-align: left;
+                    margin: 5px;
+                    padding: 5px;
+                    padding-top: 0px;
+                }
+			
+#pie{
+	display:table;
+	width:100%;
+	height:30px;
+	background-color:rgba(255,204,102,0.5);
+}
+
+/*===================== Adicionales ==========================*/
+
+.opcion{
+	display:inline-block;
+	font-size:10px;
+	color:white;
+	font-family:arial;
+	background-color:grey;
+	border-radius:8px;
+	padding-left:3px;
+	padding-right:3px;
+	margin-right:2px;
+}
+
+#btnMenu{
+	position:absolute;
+	z-index:100;
+	display:table;
+	height:36px;
+	width:8px;
+	font-family:arial;
+	font-size:9px;
+	color:#FFFFFF;
+	background-color:#FF0000;
+	top:0px;
+	left:50%;
+	text-align:center;
+	vertical-align:middle;
+	transform:rotate(-90deg);
+	transform-origin:0% 8px;
+	border-radius:5px 0px 0px 5px;
+	box-shadow:-2px 2px 5px #333333;
+	cursor:pointer;
+}
+#btnMenu:hover{
+	background-color:#009;
+}
+
+#btnMenu2{
+	position:absolute;
+	z-index:100;
+	display:table;
+	height:36px;
+	width:9px;
+	font-family:arial;
+	font-size:9px;
+	color:#FFFFFF;
+	background-color:#FF0000;
+	top:50%;
+	left:0;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:0px 5px 5px 0px;
+	box-shadow:2px 2px 5px #333333;
+	cursor:pointer;
+}
+#btnMenu2:hover{
+	background-color:#009;
+}
+

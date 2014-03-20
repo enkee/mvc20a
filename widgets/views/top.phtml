@@ -1,0 +1,77 @@
+     <!-- Encabezado -->
+     <div id="encabezado" class="nav-collapse">
+            	<div id="ie_header">
+        	</div>
+                <div id="degradado0">
+                </div>
+                <!--<canvas id="degradado">
+                </canvas>
+                <script type="text/javascript">
+                    var c=document.getElementById("degradado");
+                    var cxt=c.getContext("2d");
+                    
+                    var grd=cxt.createLinearGradient(0,150,0,0);
+                    
+                    grd.addColorStop(0,"transparent");
+                    //grd.addColorStop(0.5,"green");
+                    grd.addColorStop(0.25,"red");
+                    
+                    cxt.fillStyle=grd;
+                    cxt.fillRect(0,0,1600,150);
+                </script>-->
+         <!-- Nombre de la aplicación -->   
+                <nav>
+                    <div id="aplicacion" href="<?=BASE_URL?>"><?=APP_NAME?></div>
+         <!-- Menu Principal -->
+          <? if(isset($menu) && sizeof($menu)>0) :?>   
+                    <div class="nav-collapse" id="menu_p">
+                        <!-- Menu Principal Estilos -->
+                        <ul class="nav">
+                            <? foreach($menu['titulos'] as $item):?>
+                                <?
+                                $_item_style = '';
+                                //si hay un view y es igual al item del menu, entonces seleccinado
+                                if(View::getViewId() && $item['id'] == View::getViewId())
+                                {
+                                    $_item_style = 'active';
+                                }
+                                ?>
+                                <li class="{$_item_style}"><a href="<?=$item['enlace']?>"><?=$item['titulo']?></a></li>
+                            <? endforeach; ?>            
+                        </ul>
+                        <!-- Fecha y hora del sistema -->
+                        <span id="fecha">
+                                    <script>fecha();</script>
+                        </span>
+                        
+                        <img id="invisible" src="<?=$menu['ruta_img']?>c-invisible.png"> 
+                    </div>
+            <? endif;?> 
+                </nav>
+               <!-- Indentificador de CETPRO -->
+                    <div id="logotipo">
+                        <div id="membrete">
+                            <img id="logo" src="<?=$menu['ruta_img']?>san_luis.png" style="height:54px; float:left;">
+                            <div id="tipo"><?=$menu['cetpro']?></div>
+                        </div>    
+                    </div>
+                <!-- Identificador de usuario -->
+                <div class="usuario">
+                    <div id="data_user">
+                        <div id="foto">
+                            <img src="<?=$menu['ruta_img']?>male.jpg" style="height:54px; float:left;">
+                        </div>
+                   
+                        <div id="datos">
+                             <?=$menu['usuario']?><br>
+                             <span style="font-weight:bold"><?=$menu['role']?></span><br>
+                             <span class="opcion"><a href="<?=BASE_URL?>usuarios/cerrar" class="btn">Logout</a></span>
+                             <span class="opcion">Profile</span>
+                             <!--<ul>
+                                     <li class="opcion">Logout</li>
+                                 <li class="opcion">Profile</li>
+                             </ul>-->
+                        </div>
+                    </div>
+              	</div>
+         </div>
