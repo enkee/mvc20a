@@ -112,6 +112,10 @@ class cetprosModel extends Model
 	return $datos->fetch(PDO::FETCH_ASSOC);
     }
     
+    public function verifyAdminPermiso(){
+        
+    }
+    
 }
 
 ?>

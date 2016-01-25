@@ -139,9 +139,10 @@ class Session
             return;
         }
         
-        if(time() - Session::get('tiempo') > (SESSION_TIME * 60)){
+        if(time() - Session::get('tiempo') > (SESSION_TIME) * 60){
             Session::destroy();
-            header('location:' . BASE_URL . 'error/access/8080');
+            setcookie("dcjq-accordion-1", "", -1, "/");
+            header('location:' . BASE_URL . 'usuarios/login');
         }
         else{
             Session::set('tiempo', time());

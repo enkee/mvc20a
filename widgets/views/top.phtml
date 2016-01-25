@@ -1,5 +1,5 @@
      <!-- Encabezado -->
-     <div id="encabezado" class="nav-collapse">
+     <div id="encabezado">
             	<div id="ie_header">
         	</div>
                 <div id="degradado0">
@@ -21,57 +21,59 @@
                 </script>-->
          <!-- Nombre de la aplicación -->   
                 <nav>
-                    <div id="aplicacion" href="<?=BASE_URL?>"><?=APP_NAME?></div>
-         <!-- Menu Principal -->
-          <? if(isset($menu) && sizeof($menu)>0) :?>   
-                    <div class="nav-collapse" id="menu_p">
-                        <!-- Menu Principal Estilos -->
-                        <ul class="nav">
-                            <? foreach($menu['titulos'] as $item):?>
-                                <?
-                                $_item_style = '';
-                                //si hay un view y es igual al item del menu, entonces seleccinado
-                                if(View::getViewId() && $item['id'] == View::getViewId())
-                                {
-                                    $_item_style = 'active';
-                                }
-                                ?>
-                                <li class="{$_item_style}"><a href="<?=$item['enlace']?>"><?=$item['titulo']?></a></li>
-                            <? endforeach; ?>            
-                        </ul>
-                        <!-- Fecha y hora del sistema -->
-                        <span id="fecha">
-                                    <script>fecha();</script>
-                        </span>
-                        
-                        <img id="invisible" src="<?=$menu['ruta_img']?>c-invisible.png"> 
+                    <div id="menu_icon">
+                        <img id="menu_img" src="<?=$menu['ruta_img']?>menu_318.png">
+                        <img  style="height: 0px; width: 23px;" id="invisible2" src="<?=$menu['ruta_img']?>c-invisible.png">
                     </div>
-            <? endif;?> 
+                    <div id="aplicacion" href="<?=BASE_URL?>">
+                        <p id="nom"><?=APP_NAME?></p>
+                        <p id="version">Version 1.0</p>
+                    </div>
+                    <div class="dropper">&raquo;</div>
+                    
+               <!-- Menu Principal -->
+                    <div class="nav-collapse" id="menu_p">
+                        <div id="menu_show"></div>
+                    </div>
                 </nav>
                <!-- Indentificador de CETPRO -->
-                    <div id="logotipo">
-                        <div id="membrete">
-                            <img id="logo" src="<?=$menu['ruta_img']?>san_luis.png" style="height:54px; float:left;">
-                            <div id="tipo"><?=$menu['cetpro']?></div>
-                        </div>    
-                    </div>
+                <div id="logotipo">
+                    <!--<div id="membrete">-->
+                        <img id="logo" src="<?=$menu['ruta_img']?>san_luis.png">
+                        <!--<div id="tipo"><?=$menu['cetpro']?></div>-->
+                    <!--</div>-->
+                </div>
                 <!-- Identificador de usuario -->
                 <div class="usuario">
                     <div id="data_user">
-                        <div id="foto">
-                            <img src="<?=$menu['ruta_img']?>male.jpg" style="height:54px; float:left;">
+                        <div id="pre-foto">
+                            <div id="foto">
+                                <img src="<?=$menu['ruta_img']?>male.jpg">
+                            </div>
                         </div>
-                   
-                        <div id="datos">
-                             <?=$menu['usuario']?><br>
-                             <span style="font-weight:bold"><?=$menu['role']?></span><br>
-                             <span class="opcion"><a href="<?=BASE_URL?>usuarios/cerrar" class="btn">Logout</a></span>
-                             <span class="opcion">Profile</span>
-                             <!--<ul>
-                                     <li class="opcion">Logout</li>
-                                 <li class="opcion">Profile</li>
-                             </ul>-->
-                        </div>
+                        <ul id="datos"> <!-- Menu usuario -->
+                            <li>
+                                <a href="#">
+                                    <div id="data">
+                                        <?=$menu['usuario']?><br>
+                                        <span style="font-weight:bold"><?=$menu['role']?></span><br>
+                                        <!-- Invisible 2 aqui -->   
+                                    </div>
+                                    <div class="dropper">&raquo;</div>
+                                    <ul class="menucito"> <!-- SubMenu usuario -->
+                                       <li><a href="<? BASE_URL ?>usuarios/cerrar">Cerrar Sesion</a></li>
+                                       <li><a href="#">Config</a>
+                                           <ul>
+                                               <li><a href="#">Sittings</a></li>
+                                               <li><a href="#">Values</a></li>
+                                           </ul>
+                                       </li>
+                                       <li><a id="tempo" href="#">Tempo</a></li>
+                                    </ul>
+                                 </a>
+                                 <img id="invisible2" src="<?=$menu['ruta_img']?>c-invisible.png">
+                            </li>
+                        </ul>
                     </div>
-              	</div>
+                </div>
          </div>

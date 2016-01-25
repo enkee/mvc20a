@@ -9,11 +9,11 @@ class Registry
     private static $_instancia;
     //Clases que van ha ser almacenadas en el registro
     private $_data;
-    //public $_modelo;
+    //private $_modelo;
     
     //no se pueda crear una instancia de la clase
     private function __construct() {
-        //$this->_modelo = new cetproModel();
+        
     }
     
     //singleton
@@ -43,11 +43,15 @@ class Registry
     }
     public function dataBases(){
         $modelo = new cetprosModel();
+       
         if(Session::get('id_role')){
             $id_role = Session::get('id_role');
             $clave_cetpro = Session::get('clave_cetpro');
             //verifica si el usuario pertenece a la red    
-            if($id_role == 3 || $id_role == 5 || $id_role == 6 || $id_role == 7 || $id_role == 8 ){
+            //if(Session::get('id_role')==3||Session::get('id_role')==5||
+               //Session::get('id_role')==6||Session::get('id_role')==7){
+            //
+            if(Session::get('admin')==1){    
                 //consigue todos los cetpros de la red
                 $cetpros = $modelo->getClaveCetpros();
                 //recorre todos los cetpros

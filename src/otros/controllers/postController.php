@@ -7,7 +7,7 @@ class postController extends Controller
     public function __construct() 
     {
         parent::__construct();
-        $this->_view->setTemplate('twb');
+        $this->_view->setTemplate('sigace');
         $this->_view->setWidgetOptions('menu-top', array('top', 'top', true));
         $this->_post = $this->loadModel('post');
     }
@@ -181,6 +181,7 @@ class postController extends Controller
             $model->insertarPrueba('nombre ' . $i);
         }
         */
+        $this->_view->setTemplate('twb');
         //crea un objeto paginador.
 	$paginador = new Paginador();
 	
@@ -197,7 +198,7 @@ class postController extends Controller
         //asigna el el titulo de vista
         $this->_view->assign('titulo', 'Post');
         //renderiza la vista prueba, con el item = prueba.
-        $this->_view->renderizar('prueba', 'prueba');
+        $this->_view->renderizar('prueba', 'post');
    }
    //Esta función muestra la vista index de los post con paginación y con ajax.
    //con una serie de filtros.

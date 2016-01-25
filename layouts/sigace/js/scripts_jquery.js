@@ -57,3 +57,4 @@ function escribir2(){
 		$("#btnMenu2").html("<br>&lt");
 	}
 }
+

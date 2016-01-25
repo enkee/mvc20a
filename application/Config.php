@@ -17,7 +17,7 @@ define('DEFAULT_LAYOUT', 'sigace');
 define('APP_NAME', 'SIGACE');
 define('APP_SLOGAN', 'CETPRO...');
 define('APP_COMPANY', 'www.dlancedu.com');
-define('SESSION_TIME', 10);
+define('SESSION_TIME', 15);
 define('HASH_KEY', '4f6a6d832be79');
 
 //configuración de la base de datos

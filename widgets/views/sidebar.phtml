@@ -1,40 +1,53 @@
-<!-- Procesa las Categorias -->
-<ul class="nav nav-tabs nav-stacked">
+<!-- Inicia Menu -->
+<ul class="accordion" id="accordion-1">
  <?php foreach($menu as  $c): ?>
-    <?php if(isset($id_permiso)): ?>
-        <?php $_style = 'active'; ?>
-    <?php else: ?>
-        <?php $_style = ''; ?>
-    <?php endif; ?>
-
-    <li class='<?php echo $_style; ?>'>
-        <a href='#'><i class='<?php echo $c['id_categoria']; ?>'></i> <?php echo $c['titulo_categoria']; ?></a>
-        <!-- Procesa los menus -->
+    <!-- Procesa las Categorias -->
+    <li>
+        <a href='#'><?php echo $c['titulo_categoria']; ?></a>
         <ul>
+        <!-- Procesa los menus -->
         <?php foreach($c['menus'] as  $m): ?>
-            <!-- Condiciona a los menus libres -->
-            <?php if ($m['key_menu'] == 'libre_admin' || $m['key_menu'] == 'libre_pedagogico' || $m['key_menu'] == 'libre_financiero'|| $m['key_menu'] == 'libre_otros'|| $m['key_menu'] == 'libre_sistemas' ): ?>
+            <?php if (count($m['permisos'])==1):?>
                 <?php foreach($m['permisos'] as  $p): ?>
-                    <li class='<?php echo $_style; ?>'>
-                        <a href='<?php echo $p['enlace']; ?>'><i class='<?php echo $p['id_permiso']; ?>'></i> <?php echo $p['titulo_permiso']; ?></a>
+                    <li>
+                        <a href='<?php echo $p['enlace']; ?>'><?php echo $p['titulo_permiso']; ?></a>
                     </li>
                 <?php endforeach; ?>
-            <?php else :?>
-            <li class='<?php echo $_style; ?>'>
-                <a href='#'><i class='<?php echo $m['imagen']; ?>'></i> <?php echo $m['titulo_menu']; ?></a>
-            </li>
-                <!-- Procesa los permisos -->
-                <ul>
-                <?php foreach($m['permisos'] as  $p): ?>
-                    <li class='<?php echo $_style; ?>'>
-                        <a href='<?php echo $p['enlace']; ?>'><i class='<?php echo $p['id_permiso']; ?>'></i> <?php echo $p['titulo_permiso']; ?></a>
-                    </li>
-                <?php endforeach; ?>
-                </ul>
-            <?php endif;?>
+            <?php else: ?>
+                <li>
+                    <a href='#'><?php echo $m['titulo_menu']; ?></a>
+                    <!-- Procesa los permisos -->
+                    <ul>
+                    <?php foreach($m['permisos'] as  $p): ?>
+                        <?php if (count($p['parametros'])==1):?>
+                            <?php foreach($p['parametros'] as  $t): ?>
+                                <li>
+                                    <a href='<?php echo $t['enlace']; ?>'><?php echo $p['titulo_permiso']; ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        <?php elseif(count($p['parametros'])==0): ?>
+                            <li>
+                                <a href='<?php echo $p['enlace']; ?>'><?php echo $p['titulo_permiso']; ?></a>
+                            </li>   
+                        <?php else: ?>
+                            <li>
+                                <a href='#'><?php echo $p['titulo_permiso']; ?></a>
+                                <!-- Procesa los parametros -->
+                                <ul>
+                                   <?php foreach($p['parametros'] as  $t): ?>
+                                        <li>
+                                            <a href='<?php echo $t['enlace']; ?>'><?php echo $t['titulo_parametro']; ?></a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                             </li>
+                        <?php endif; ?>    
+                    <?php endforeach; ?>
+                    </ul>
+                </li>
+            <?php endif; ?>
         <?php endforeach; ?>
-        </ul>    
+        </ul>
     </li>
  <?php endforeach; ?>   
 </ul>
-

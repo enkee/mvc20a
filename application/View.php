@@ -81,6 +81,7 @@ class View extends SmartyBC
                 'app_name' => APP_NAME,
                 'app_slogan' => APP_SLOGAN,
                 'app_company' => APP_COMPANY),
+            'user' => Session::get('usuario'),
             );
         /*
         if (Session::get('autenticado') == true){

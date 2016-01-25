@@ -1,7 +1,7 @@
 <!-- Model widget -->
 <?php
 
-require_once ROOT . 'src/administrativo' . DS . 'models' . DS . 'cetprosModel.php';
+//require_once ROOT . 'src/administrativo' . DS . 'models' . DS . 'cetprosModel.php';
 
 class menuModelwidget extends Model
 {

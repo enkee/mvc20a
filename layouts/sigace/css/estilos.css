@@ -1,33 +1,27 @@
 /*===================== Principales ==========================*/
-body{
-	
-}
-body, html{
-	margin:0px;
-	padding:0px;
-	height:100%;
-	width:100%;
-	text-align:center;
-}
-#cuerpo{
-	margin:auto;
-	display:table;
-	width:100%;
-	height:100%;
-}
+/*Inicializaciones*/
+a:link {text-decoration: none; color: black}      /* unvisited link */
+a:visited {text-decoration: none; color: black}  /* visited link */
+a:hover {text-decoration: none; color: black}  /* mouse over link */
+a:active {text-decoration: none; color: black}  /* selected link */
+
+
 #encabezado{
 	/*background-color:rgba(0,255,0,0.5);*/
 	display:table;
 	width:100%;
-	height:54px;
+	height:40px;
 	background-image:url(../img/textura_3.png), url(../img/motivo_2.png);
 	background-size:30px;
 	overflow:hidden;
+        position: fixed;
+        overflow: visible;
 	/*display:none;*/
 }
-	#degradado0{
+    
+        #degradado0{
 		width:100%;
-		height:54px;
+		height:100%;
 		position:absolute;
 		z-index:-1;
 		background: linear-gradient(top, green , green 75%, transparent 100%);
@@ -36,31 +30,50 @@ body, html{
 	nav{
 		display:table;
 		width:100%;
-                height: 54px;
+                height: 100%;
 		background-color:rgba(155,55,20,0.5);
-		background-image:url(../img/RED04-Bp.png);
-                background-size: auto 220%;
-                background-position: 107% center;
-		background-repeat:no-repeat;
                 vertical-align: middle;
                 float:left;
                 text-align: left;
 	}
-                #aplicacion{
-                        display:table-cell;
-                        height:54px;
-                        width: 120px;
-                        vertical-align: middle;
-                        text-align: center;
-                        font-family: arial;
-                        font-size: 25px;
-                        background-color:rgba(205,205,10,0.5);
-                        color: black;
-                        text-decoration: none;
+                #menu_icon{
+                    width: 23px;
+                    display:table-cell;
                 }
+                #menu_img{
+                    height: 37px;
+                    left: -15px;
+                    position: absolute;
+                }
+                #aplicacion{
+                    display:table-cell;
+                    height:100%;
+                    width: 100px;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-family: arial;
+                    font-size: 22px;
+                    background-color:rgba(205,205,10,0.5);
+                    color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                    
+                }
+                    #nom{
+                        line-height: 100%;
+                    }
+                    #version{
+                        font-size: 10px;
+                        text-indent: -23px;
+                        line-height:20%;
+                    }
 		#menu_p{
+                        /*background-image:url(../img/RED04-Bp.png);
+                        background-size: auto 220%;
+                        background-position: 107% center;
+                        background-repeat:no-repeat;*/
                         display:table-cell;
-                        height: 54px;
+                        height: 100%;
 			font-size:12px;
 			padding:0px;
 			margin:0px;
@@ -71,6 +84,12 @@ body, html{
 			overflow:hidden;
                         background-color:rgba(255,255,0,0.5);
 		}
+                    #menu_hide{
+                        display: none;
+                    }
+                    #menu_show{
+                        display: none;
+                    }
                     nav ul{
                         display:table-cell;
                         margin: 0px;
@@ -96,31 +115,38 @@ body, html{
 			#invisible{
 				display:block;
 				height:0px;
-				width:190px;
+				width:140px;
                                 text-align: left;
                         }
-	
+                        
                         
        #logotipo{
-                width: 220px;
+                position: relative;
+                width: 45px;
 		display: table-cell;
 		background-color:rgba(204,102,204,0.5);
+                height: 100%;
+                overflow: hidden;
 	}
 		
-                #membrete{
+                /*#membrete{
                     display:table;
-                    width: 220px;
+                    width: 100%;
                     font-size:12px;
                     color:white;
                     font-family:arial;
                     vertical-align:middle;
                     background-color:rgba(204,0,204,0.5);
-                }
+                }*/
                         #logo{
-                                display:inline-block;
+                                position: absolute;
+                                display:block;
+                                height: 90px;
+                                top:-50%;
+                                z-index: -1;
 
                         }
-                        #tipo{
+                        /*#tipo{
                                 display: table-cell;
                                 width: 100%;
                                 font-family:arial;
@@ -130,102 +156,158 @@ body, html{
                                 text-align:center;
                                 font-weight:bold;
                                 padding: 2px;
-                        }
+                        }*/
                 
        .usuario{
+                height: 100%;
                 width: 220px;
 		display:table-cell;
 		background-color:rgba(0,102,204,0.5);
                 vertical-align: top;
        }
-       
-       #login{
-                width: 400px;
-                display:table-cell;
-                background-color:rgba(0,102,204,0.5);
-                vertical-align: middle;
-       }	
-	
-                #data_user{
-                    display:table;
-                    height:54px;
-                    width:220px;
-                    font-size:12px;
-                    padding:0px;
-                    margin:0px;
-                    color:white;
-                    font-family:arial;
-                    vertical-align:middle;
-                    text-align:right;
-                    overflow:hidden;
-                    background-color:rgba(204,0,204,0.5);
-                }
+            #data_user{
+                display:table;
+                height:100%;
+                width:100%;
+                font-size:12px;
+                padding:0px;
+                margin:0px;
+                color:white;
+                font-family:arial;
+                vertical-align:middle;
+                text-align:right;
+                /*overflow:hidden;*/
+                background-color:rgba(204,100,204,0.5);
+            }
+                    #pre-foto{
+                        display: table;
+                        height: 100%;
+                        width: 41px;
+                        background-color:rgba(0,225,50,0.5);
+                    }
                         #foto{
-                                display:inline-block;
-                                height:40px;
-                                border:5px solid black;
-                                border-radius:10px;
-                                overflow:hidden;
-                                margin-right:2px;
-                                margin-left:2px;
-                                margin-bottom:3px;
+                            display: table-cell;
+                            position:absolute;
+                            /*z-index:-1;*/
+                            width: 36px;
+                            height:36px;
+                            border:1px solid black;
+                            border-radius:10px;
+                            overflow:hidden;
+                            margin-top: 1px;
+                            margin-left:1px;
+                            float: left;
+                        }
+                            #foto img{
                                 float: left;
-                                
-                        }
-                        #datos{
-                                display: table-cell;
                                 width: 100%;
-                                font-family:arial;
-                                font-size:12px;
-                                background-color:rgba(255,255,0,0.5);
-                                vertical-align:top;
-                                text-align:left;
-                                padding-left: 2px;
-                                padding-top: 2px;
+                                height: auto;
+                            }
+
+                    #datos{
+                            display: table-cell;
+                            width: 100%;
+                            font-family:arial;
+                            font-size:12px;
+                            background-color:rgba(255,255,0,0.5);
+                            vertical-align:middle;
+                            text-align:left;
+                            position: relative;
+                            background-color:rgba(105,22,165,0.5);/*morado*/
+                    }
+                   
+                        #datos li a{
+                                display: table-cell;
+                                height: 40px;
+                                vertical-align:middle;
+                                /*background-color:rgba(5,22,145,0.5); /*azul*/
                         }
-#contenido{
-	display:table-row;
-	background-color:rgba(124,153,255,0.5);
-	height:100%;
-}
-	#contenedor{
-		display:table;
-		/*top:-36px;*/
-		width:100%;
-                text-align: left;
-		height:100%;
-	}
-		#menu{
-                        display:table;
-                        width:200px;
+                            #data{
+                                display: table-cell;
+                                vertical-align:middle;
+                                /*background-color:rgba(75,122,45,0.5); /*azul*/
+                            }
+                            .dropper{
+                                transform: rotate(90deg);
+                                display: table-cell;
+                                vertical-align:middle;
+                                padding: 3px;
+                                text-align: center;
+                                width: 10px;
+                                /*background-color:rgba(55,785,0,0.5);/*verde*/
+                            }
+                       .menucito{
+                                display: table;
+                                visibility: hidden;
+                                background-color: white;
+                                width: 130px;
+                                position: absolute;
+                                top: 40px;
+                                z-index: 10;
+                                overflow: visible;
+                                border: solid 1px black;
+                                box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+                        }
+                            .menucito li {
+                                    display: table;
+                                    text-align: left;
+                                    padding: 4px;
+                                    width: calc(100% - 8px);
+                            }
+                            .menucito li:hover{
+                                    background-color: orange;
+                            }
+                            .menucito li a{
+                                    display: table-cell;                   
+                                    vertical-align: middle;
+                                    height: 20px !important;
+                            }
+                            
+                                .menucito li ul{
+                                        visibility: hidden;
+                                        width: 90px;
+                                        position: absolute;
+                                        right: 129px;
+                                        background-color: white;
+                                        border: solid 1px black;
+                                        box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+                                        
+                                }
+                    
+                        #invisible2{
+                            display:block;
+                            height:0px;
+                            width:179px;
+                            text-align: left;
+                            background-color: orange;
+                        }
+                    
+
+
+                    #menu{
+                            /*height: 300px;*/
+                            vertical-align: top;
+                            text-align: left;
+                            background-color:rgba(255,255,150,0.5);
+                            
+                    }
+                
+                    #accordion-1{
+                        width: 100%;
+                        height: 100%;
+                    }
+		
+                    .hoja{
+                        display:inline-table;
                         vertical-align: top;
+                        background-color:rgba(255,255,150,0.5);
                         text-align: left;
-			background-color:rgba(255,255,150,0.5);
-		}
-		#principal{
-			display:table-cell;
-                        vertical-align: top;
-			width:100%;
-			background-color:rgba(255,0,51,0.5);
-			text-align:center;
-			margin: auto;
-		}
-                .hoja{
-                    display:inline-table;
-                    vertical-align: top;
-                    background-color:rgba(255,255,150,0.5);
-                    text-align: left;
-                    margin: 5px;
-                    padding: 5px;
-                    padding-top: 0px;
-                }
+                        margin: 5px;
+                        padding: 5px;
+                        padding-top: 0px;
+                    }
+                
 			
-#pie{
-	display:table;
-	width:100%;
-	height:30px;
-	background-color:rgba(255,204,102,0.5);
-}
 
 /*===================== Adicionales ==========================*/
 
@@ -241,49 +323,8 @@ body, html{
 	margin-right:2px;
 }
 
-#btnMenu{
-	position:absolute;
-	z-index:100;
-	display:table;
-	height:36px;
-	width:8px;
-	font-family:arial;
-	font-size:9px;
-	color:#FFFFFF;
-	background-color:#FF0000;
-	top:0px;
-	left:50%;
-	text-align:center;
-	vertical-align:middle;
-	transform:rotate(-90deg);
-	transform-origin:0% 8px;
-	border-radius:5px 0px 0px 5px;
-	box-shadow:-2px 2px 5px #333333;
-	cursor:pointer;
-}
-#btnMenu:hover{
-	background-color:#009;
-}
 
-#btnMenu2{
-	position:absolute;
-	z-index:100;
-	display:table;
-	height:36px;
-	width:9px;
-	font-family:arial;
-	font-size:9px;
-	color:#FFFFFF;
-	background-color:#FF0000;
-	top:50%;
-	left:0;
-	text-align:center;
-	vertical-align:middle;
-	border-radius:0px 5px 5px 0px;
-	box-shadow:2px 2px 5px #333333;
-	cursor:pointer;
-}
-#btnMenu2:hover{
-	background-color:#009;
+#login{
+    display: none;
 }
 

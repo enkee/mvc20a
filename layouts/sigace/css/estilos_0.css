@@ -1,0 +1,391 @@
+/*===================== Principales ==========================*/
+/*Inicializaciones*/
+a:link {text-decoration: none; color: black}      /* unvisited link */
+a:visited {text-decoration: none; color: black}  /* visited link */
+a:hover {text-decoration: none; color: black}  /* mouse over link */
+a:active {text-decoration: none; color: black}  /* selected link */
+
+body{
+	
+}
+body, html{
+	margin:0px;
+	padding:0px;
+	/*height:100%;*/
+	width:100%;
+	text-align:center;
+}
+#cuerpo{
+	margin:auto;
+	display:table;
+	width:100%
+	/*height:100%;*/
+}
+#encabezado{
+	/*background-color:rgba(0,255,0,0.5);*/
+	display:table;
+	width:100%;
+	height:40px;
+	background-image:url(../img/textura_3.png), url(../img/motivo_2.png);
+	background-size:30px;
+	overflow:hidden;
+        position: fixed;
+        overflow: visible;
+	/*display:none;*/
+}
+    
+        #degradado0{
+		width:100%;
+		height:100%;
+		position:absolute;
+		z-index:-1;
+		background: linear-gradient(top, green , green 75%, transparent 100%);
+	}
+	
+	nav{
+		display:table;
+		width:100%;
+                height: 100%;
+		background-color:rgba(155,55,20,0.5);
+                vertical-align: middle;
+                float:left;
+                text-align: left;
+	}
+                #menu_icon{
+                    width: 23px;
+                    display:table-cell;
+                }
+                #menu_img{
+                    height: 37px;
+                    left: -15px;
+                    position: absolute;
+                }
+                #aplicacion{
+                    display:table-cell;
+                    height:100%;
+                    width: 100px;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-family: arial;
+                    font-size: 22px;
+                    background-color:rgba(205,205,10,0.5);
+                    color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                    
+                }
+                    #nom{
+                        line-height: 100%;
+                    }
+                    #version{
+                        font-size: 10px;
+                        text-indent: -23px;
+                        line-height:20%;
+                    }
+		#menu_p{
+                        /*background-image:url(../img/RED04-Bp.png);
+                        background-size: auto 220%;
+                        background-position: 107% center;
+                        background-repeat:no-repeat;*/
+                        display:table-cell;
+                        height: 100%;
+			font-size:12px;
+			padding:0px;
+			margin:0px;
+			color:white;
+			font-family:arial;
+                        text-align:left;
+			vertical-align:middle;
+			overflow:hidden;
+                        background-color:rgba(255,255,0,0.5);
+		}
+                    #menu_hide{
+                        display: none;
+                    }
+                    #menu_show{
+                        display: block;
+                    }
+                    nav ul{
+                        display:table-cell;
+                        margin: 0px;
+                        padding: 0px;
+                        text-align: left;
+                        background-color:rgba(25,25,100,0.5);
+                    }
+			nav ul li{  
+				display:inline-block;
+				background-color:grey;
+				border-radius:8px;
+				margin-bottom:1px;
+				padding-left:5px;
+				padding-right:5px;
+			}
+			#fecha{
+				display:block;
+				font-family:arial;
+				font-size:10px;
+                                text-align: left;
+                                padding-left: 5px;
+			}
+			#invisible{
+				display:block;
+				height:0px;
+				width:140px;
+                                text-align: left;
+                        }
+                        
+                        
+       #logotipo{
+                position: relative;
+                width: 45px;
+		display: table-cell;
+		background-color:rgba(204,102,204,0.5);
+                height: 100%;
+                overflow: hidden;
+	}
+		
+                /*#membrete{
+                    display:table;
+                    width: 100%;
+                    font-size:12px;
+                    color:white;
+                    font-family:arial;
+                    vertical-align:middle;
+                    background-color:rgba(204,0,204,0.5);
+                }*/
+                        #logo{
+                                position: absolute;
+                                display:block;
+                                height: 90px;
+                                top:-50%;
+                                z-index: -1;
+
+                        }
+                        /*#tipo{
+                                display: table-cell;
+                                width: 100%;
+                                font-family:arial;
+                                font-size:12px;
+                                background-color:rgba(255,255,0,0.5);
+                                vertical-align:middle;
+                                text-align:center;
+                                font-weight:bold;
+                                padding: 2px;
+                        }*/
+                
+       .usuario{
+                height: 100%;
+                width: 220px;
+		display:table-cell;
+		background-color:rgba(0,102,204,0.5);
+                vertical-align: top;
+       }
+            #data_user{
+                display:table;
+                height:100%;
+                width:100%;
+                font-size:12px;
+                padding:0px;
+                margin:0px;
+                color:white;
+                font-family:arial;
+                vertical-align:middle;
+                text-align:right;
+                /*overflow:hidden;*/
+                background-color:rgba(204,100,204,0.5);
+            }
+                    #pre-foto{
+                        display: table;
+                        height: 100%;
+                        width: 41px;
+                        background-color:rgba(0,225,50,0.5);
+                    }
+                        #foto{
+                            display: table-cell;
+                            position:absolute;
+                            /*z-index:-1;*/
+                            width: 36px;
+                            height:36px;
+                            border:1px solid black;
+                            border-radius:10px;
+                            overflow:hidden;
+                            margin-top: 1px;
+                            margin-left:1px;
+                            float: left;
+                        }
+                            #foto img{
+                                float: left;
+                                width: 100%;
+                                height: auto;
+                            }
+
+                    #datos{
+                            display: table-cell;
+                            width: 100%;
+                            font-family:arial;
+                            font-size:12px;
+                            background-color:rgba(255,255,0,0.5);
+                            vertical-align:middle;
+                            text-align:left;
+                            position: relative;
+                            background-color:rgba(105,22,165,0.5);/*morado*/
+                    }
+                   
+                        #datos li a{
+                                display: table-cell;
+                                height: 40px;
+                                vertical-align:middle;
+                                /*background-color:rgba(5,22,145,0.5); /*azul*/
+                        }
+                            #data{
+                                display: table-cell;
+                                vertical-align:middle;
+                                /*background-color:rgba(75,122,45,0.5); /*azul*/
+                            }
+                            .dropper{
+                                transform: rotate(90deg);
+                                display: table-cell;
+                                vertical-align:middle;
+                                padding: 3px;
+                                text-align: center;
+                                width: 10px;
+                                /*background-color:rgba(55,785,0,0.5);/*verde*/
+                            }
+                       .menucito{
+                                display: table;
+                                visibility: hidden;
+                                background-color: white;
+                                width: 130px;
+                                position: absolute;
+                                top: 40px;
+                                z-index: 10;
+                                overflow: visible;
+                                border: solid 1px black;
+                                box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+                        }
+                            .menucito li {
+                                    display: table;
+                                    text-align: left;
+                                    padding: 4px;
+                                    width: calc(100% - 8px);
+                            }
+                            .menucito li:hover{
+                                    background-color: orange;
+                            }
+                            .menucito li a{
+                                    display: table-cell;                   
+                                    vertical-align: middle;
+                                    height: 20px !important;
+                            }
+                            
+                                .menucito li ul{
+                                        visibility: hidden;
+                                        width: 90px;
+                                        position: absolute;
+                                        right: 129px;
+                                        background-color: white;
+                                        border: solid 1px black;
+                                        box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+                                        
+                                }
+                    
+                        #invisible2{
+                            display:block;
+                            height:0px;
+                            width:179px;
+                            text-align: left;
+                            background-color: orange;
+                        }
+                    
+
+
+#contenido{
+	display: table-row;
+	background-color: rgba(124,153,255,0.5);
+	height: 300px;
+        /*width: 100%;*/
+}
+	#contenedor{
+		margin-top: 40px;
+                display:table;
+		/*top:-36px;*/
+		width:100%;
+                text-align: left;
+		/*height:calc(100% - 40px);*/
+	}
+                #izquierda{
+                    width: 200px;
+                    overflow:auto; 
+                }
+                    #menu{
+                            display:table-cell;
+                            width:200px;
+                            vertical-align: top;
+                            text-align: left;
+                            background-color:rgba(255,255,150,0.5);
+                    }
+                    .menu-nav{  /*Llamado en script*/
+                            position: fixed;
+                            clear: both;
+                    }
+                
+		#principal{ 
+			display:table-cell;
+                        vertical-align: top;
+			width:100%;
+			background-color:rgba(255,0,51,0.5);
+			text-align:center;
+			margin: auto;
+                        overflow:auto;
+		}
+                    .principal-nav{
+                        padding-left:200px;
+                    }
+                    .hoja{
+                        display:inline-table;
+                        vertical-align: top;
+                        background-color:rgba(255,255,150,0.5);
+                        text-align: left;
+                        margin: 5px;
+                        padding: 5px;
+                        padding-top: 0px;
+                    }
+                #derecha{
+                    overflow: auto;
+                }
+                    .derecha_h{
+                        width: 150px;
+                        display: none;
+                    }
+                    .derecha_s{
+                        width: 150px;
+                    }
+			
+#pie{
+	/*position: fixed;*/
+        display:table;
+	width:100%;
+	height:30px;
+	background-color:rgba(255,204,102,0.5);
+        bottom: 0px;
+}
+
+/*===================== Adicionales ==========================*/
+
+.opcion{
+	display:inline-block;
+	font-size:10px;
+	color:white;
+	font-family:arial;
+	background-color:grey;
+	border-radius:8px;
+	padding-left:3px;
+	padding-right:3px;
+	margin-right:2px;
+}
+
+
+#login{
+    display: none;
+}
+

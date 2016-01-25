@@ -86,4 +86,62 @@ var textomes = new Array (12);
 
 document.write(textosemana[diasemana] + ", " + diames + " de " + textomes[mes] + " de " + ano + "<br>");
 }
+//Ajustar contenido a ventana.
+$(function(){
+  //$('#contenido').css({ height: $(window).innerHeight()});
+  //$('#izquierda, #principal, #derecha').css({ height: $('#contenido').innerHeight() });
+  
+  $(window).resize(function(){
+    //$('#contenido').css({ height: $(window).innerHeight() });
+    //$('#izquierda, #principal, #derecha').css({ height: $('#contenido').innerHeight() });
+  });
+});
+
+//cloning a principal menu from a page
+$(function(){
+    $('#menu_show').html($('#menu_hide').html());
+});
+
+
+//menu usuario hover
+$(function(){
+    $(".menucito li").hover(function(){
+        //$(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    }, function(){
+        //$(this).removeClass("hover");
+        $('ul:first',this).css('visibility', 'hidden');
+    });
+    
+    $("ul#datos li ul li:has(ul)").find("a:first").append(" &raquo; ");
+});
+
+//menu usuario click
+jQuery(window).load(function() {
+   $("#datos > li > a").click(function (e) { // binding onclick
+        if ($(this).parent().hasClass('selected')) {
+            $("#datos .selected .menucito").css('visibility', 'hidden'); // hiding popups
+            $("#datos .selected").removeClass("selected");
+        } else {
+            
+            if ($(this).next("ul").length) {
+                $(this).parent().addClass("selected"); // display popup
+                $(this).next("ul").css('visibility', 'visible');
+            }
+        }
+        e.stopPropagation();
+    });
+    $("body").click(function () { // binding onclick to body
+        $("#datos .menucito").css('visibility', 'hidden'); // hiding popups
+        $("#datos .selected").removeClass("selected");
+    });
+    
+    $("#tempo").click(function(){
+        if($("#derecha").hasClass("derecha_h")){
+            $("#derecha").removeClass("derecha_h").addClass("derecha_s");
+        }else{
+            $("#derecha").removeClass("derecha_s").addClass("derecha_h");
+        }
+    });
+});
 

@@ -1,0 +1,241 @@
+* {font-family: "Times New Roman", Times, Serif;}
+
+BODY {
+color:#000000; 
+background-color: #FFFFFF;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_fondo.gif);
+margin: 0px;
+padding: 0px;} 
+
+P {font-size: small;
+text-align: left;
+text-indent: 2em;
+margin-bottom: -1em;}
+
+.cap:first-letter {font-weight: bold;
+color: #CC00CC;
+font-family: cursive;
+font-size: 150%;}
+
+H1 {font-size: large;
+color: #CC00CC;}
+
+H2 {
+color: #CC00CC;
+font-size: medium;
+font-weight: bold;}
+
+.nota {font-size: x-small;
+color: #006633;
+text-align: center;
+text-indent: 0px;
+border-top: 1px solid #CC00CC;
+padding-top: 1em;
+padding-bottom: 2em;}
+
+HR {color: #FFFFFF;
+	height: 1px;}
+
+A:link {text-decoration: none; color: #006633; font-family: cursive;}
+A:visited {text-decoration: none; color: #006633; font-family: cursive;}
+A:hover {text-decoration: none; color: #CC00CC; font-family: cursive;}
+A:active {text-decoration: none; color: #CC00CC; font-family: cursive;}
+
+DIV#logo {width: 144px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/logo.gif);
+	position: absolute;
+	top: 8px;
+	right: 1%;}
+
+DIV#home {width: 100px;
+	height: 36px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_btn.gif);
+	position: absolute;
+	top: 4px;
+	left: 4px;}
+
+DIV#css {width: 100px;
+	height: 36px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_btn.gif);
+	position: absolute;
+	top: 4px;
+	left: 105px;}
+
+DIV#manual {width: 100px;
+	height: 36px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_btn.gif);
+	position: absolute;
+	top: 40px;
+	left: 54px;}
+
+DIV#autor {width: 100px;
+	height: 36px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_btn.gif);
+	position: absolute;
+	top: 76px;
+	left: 4px;}
+
+.boton {width: 100px;
+	height: 36px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.boton TR TD {text-align: left;
+	vertical-align: bottom;
+	font-size: 14px;
+padding-left: 32px;}
+
+DIV#contenido {position: absolute;
+	top: 72px;
+	left: 200px;
+	padding-right: 12px;
+padding-top: 12px;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_rule2.gif);
+background-repeat: repeat-x;
+}
+
+BODY#manual DIV#contenido {width: 75%;
+	position: absolute;
+	top: 72px;
+	left: 170px;
+	padding-right: 12px;
+padding-top: 12px;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_rule2.gif);
+background-repeat: repeat-x;
+}
+
+DIV#select {width: 125px;
+	position: absolute;
+	top: 148px;
+	left: 8px;}
+
+DIV#select P {font-size: x-small;
+color: #006666;
+text-align: left;
+text-indent: 0px;}
+
+DIV#select P STRONG {font-size: x-small;
+color: #FF00FF;}
+
+IMG {border:none}
+
+.centrado {text-align: center;
+text-indent: 0px;}
+
+.derecha {text-align: right}
+
+/* Hoja de estilo del manual */
+
+#manual DIV#logo {width: 144px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/logo.gif);
+	position: absolute;
+	top: 8px;
+	right: 1%;}
+
+#manual DIV#home {width: 100px;
+	height: 36px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_btn.gif);
+	position: absolute;
+	top: 4px;
+	left: 4px;}
+
+#manual DIV#manual {width: 100px;
+	height: 36px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_btn.gif);
+	position: absolute;
+	top: 40px;
+	left: 54px;}
+
+#manual DIV.barra {position: absolute;
+	left: 170px;
+	top: 0px;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_rule1.gif);
+}
+
+#manual .barra TABLE TD#titulo {text-align: center;
+vertical-align: middle;
+font-size: large;
+font-weight: bold;
+color: #009999;}
+}
+
+#manual .barra TABLE TD.ico {
+width: 13px;
+vertical-align: middle;
+}
+
+#manual .barra TABLE TD.prev-next {
+vertical-align: middle;
+}
+
+.cod {
+font-family: Courier, "Courier New", Monospace;
+text-align: left;
+line-height: 1.5em;
+text-indent: 0px;
+color: #006600;
+background-color: #FFDDFF;
+padding-left: 2em;}
+
+CODE {
+font-family: Courier, "Courier New", Monospace;
+font-size:   small;
+color: #996600;
+font-weight: bold;} 
+
+#manual #contenido DL, UL, OL, LI {
+font-size: small;
+margin-left: 2em;}
+
+UL { list-style-image: url("file:///C|/Documents and Settings/Enrique/Configuración local/Archivos temporales de Internet/Content.IE5/6ZJ4U3ZD/img/didi_flecha.gif") }
+
+#manual #contenido TABLE {
+margin: 0px;
+text-indent: 0px;
+font-size: x-small;
+background-color: #FFCCFF;}
+
+#manual #contenido DT, DD, DL, TD, TH {
+font-size: small;}
+
+#manual #contenido TD {padding: 6px;}
+#manual #contenido TH {
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_rule1.gif);
+color: #009999;
+padding:2px;}
+
+#manual #contenido .prop {
+color: #006666;
+font-weight: bold;
+padding: 3px 6px; }
+
+#manual #contenido .val {background-color: #FFDDFF; padding: 4px;}
+#manual #contenido .def {padding: 4px; background-color: #FFCCFF;}
+
+#manual #contenido PRE {
+padding: 4px;
+}
+
+#manual #contenido DL {font-weight: bold;}
+#manual #contenido DD {font-weight: normal;}
+
+#manual #contenido .temas {
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/6ZJ4U3ZD/img/didi_rule1.gif);
+	text-align: center;
+	font-size: small;
+	padding: 6px;}
+
+#manual #contenido .temas A {
+background-color: transparent;
+color: #006666; 
+} 
+
+#babylon {background-color: transparent;
+font-size: xx-small;
+text-align: center;
+color: #666666;}
+
+#babylon A {background-color: transparent;}

@@ -8,7 +8,6 @@ class ACL
     private $_id;
     private $_role;
     private $_permisos;
-    private $_menus;
     //Inicia session, consigue los roles y permisos
     public function __construct($id = false)
     {
@@ -27,7 +26,6 @@ class ACL
         $this->_db = $this->_registry->_db;
         $this->_role = $this->getRole();
         $this->_permisos = $this->getPermisosRole();
-        $this->_menus = $this->getMenusRole();
         $this->compilarAcl();
     }
     //consigue los permisos de usuario
@@ -37,12 +35,15 @@ class ACL
                 $this->_permisos,
                 $this->getPermisosUsuario()
                 );
+        //throw new Exception("<pre>" . print_r($this->_permisos,true) . "</pre>");
     }
+    
+    
     //consigue el rol de usuario
     public function getRole()
     {
         $role = $this->_db->query(
-                "select role from usuarios " .
+                "select role from personal " .
                 "where id = {$this->_id}"
                 );
                 
@@ -106,6 +107,28 @@ class ACL
         //retorna la variable data
         return $data;
     }
+    private function getParametros(){
+        $parametros = array();
+        
+        if($this->_permisos['post']){
+            $parametros = array(
+                0 => array(
+                    'key_permiso'=> 'post',
+                    'key_parametro'=> 'hola',
+                    'titulo_parametro'=>'Hola Amigos',
+                    'enlace'=>'post/prueba'
+                ),
+                1 => array(
+                    'key_permiso'=> 'post',
+                    'key_parametro'=> 'Mora',
+                    'titulo_parametro'=>'Hola Cuniau',
+                    'enlace'=>'post'
+                )
+            );
+        }
+        return $parametros;
+    }
+
     public function getMenusRole(){
         //consigue todos las categorias de un role
         $categorias = $this->_db->query(
@@ -143,7 +166,7 @@ class ACL
         $menus = $menus->fetchAll(PDO::FETCH_ASSOC);
         $permisos = $permisos->fetchAll(PDO::FETCH_ASSOC);
         //crea una variable de array lipia
-        
+            
         //recorre Categorias
         $data_categorias = array();
         for($i = 0; $i < count($categorias); $i++){
@@ -155,13 +178,28 @@ class ACL
                     $data_permisos = array();
                     for($k = 0; $k < count($permisos); $k++){
                         if($permisos[$k]['id_menu'] == $menus[$j]['id_menu']){
+                            //recorre Parametros
+                            $data_parametros = array();
+                            $parametros = $this->getParametros();
+                            
+                            for($l = 0; $l < count($parametros); $l++){
+                                if($parametros[$l]['key_permiso'] == $permisos[$k]['key_permiso']){
+                                    $key_parametro = $parametros[$l]['key_parametro'];
+                                    if($key_parametro == ''){continue;}
+                                    $data_parametros[$key_parametro] = array(
+                                        'titulo_parametro' => $parametros[$l]['titulo_parametro'],
+                                        'enlace' => BASE_URL . $parametros[$l]['enlace'],
+                                    );
+                                }
+                            }
                             $key_permiso = $permisos[$k]['key_permiso'];
                             if($key_permiso == ''){continue;}
                             $data_permisos[$key_permiso] = array(
                                 'key_permiso' => $key_permiso,
                                 'titulo_permiso' => $permisos[$k]['permiso'],
                                 'enlace' => BASE_URL . $permisos[$k]['enlace'],
-                                'id_permiso' => $permisos[$k]['id_permiso']
+                                'id_permiso' => $permisos[$k]['id_permiso'],
+                                'parametros'=> $data_parametros
                             );
                         }
                     }
@@ -187,7 +225,9 @@ class ACL
         }
         
         //retorna la variable data
-        return $data_categorias;
+       //throw new Exception("<pre>" . print_r($data_categorias,true) . "</pre>");
+       return $data_categorias;
+        
     }
     //consigue la la key del permiso.
     public function getPermisoKey($permisoID)

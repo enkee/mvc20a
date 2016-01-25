@@ -1,0 +1,294 @@
+* {font-family: Sans-Serif;}
+
+BODY {
+color:#0000ff; 
+background-color: #FFFF00;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/fondo.gif);
+margin: 0;
+padding: 0;
+scrollbar-face-color: #FFCC99;
+scrollbar-arrow-color: #000000;
+scrollbar-base-color: #FFFFEE;
+scrollbar-highlight-color: #FFFFEE;
+
+scrollbar-darkshadow-color: #FFFFEE;
+scrollbar-track-color: #FFFFEE;
+scrollbar-shadow-color: #FFFFEE;
+scrollbar-3dlight-color: #FFFFEE;
+} 
+
+P {font-size: x-small;
+text-align: justify;
+text-indent: 3em;
+margin-bottom: -1em;}
+
+.cap:first-letter {font-weight: bold;
+color: #006666;
+font-size: 150%;}
+
+H1 {font-size: large;
+color: #006666;}
+
+H2 {
+color: #000099;
+font-size: medium;
+font-weight: bold;}
+
+.nota {font-size: xx-small;
+color: #996633;
+text-align: center;
+text-indent: 0;
+border-top: 1px solid #009999;
+margin-top: 3em;}
+
+HR {color: #009999;
+	height: 1px;}
+
+A:link {text-decoration: none; color: #0000FF;}
+A:visited {text-decoration: none; color: #006666;}
+A:hover {text-decoration: none; color: #FF0000;}
+A:active {text-decoration: none; color: #006666;}
+
+DIV#menu {background-color:#FFCC99;
+	width: 472px;
+	height: 52px;
+	border: 2px outset #009999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;}
+
+DIV#logo {width: 144px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/logo.gif);
+	position: absolute;
+	top: 8px;
+	left: 4px;}
+
+DIV#home {width: 72px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/home.gif);
+	position: absolute;
+	top: 9px;
+	left: 156px;}
+
+DIV#css {width: 72px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/texto.gif);
+	position: absolute;
+	top: 9px;
+	left: 232px;}
+
+DIV#manual {width: 72px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/libro.gif);
+	position: absolute;
+	top: 9px;
+	left: 308px;}
+
+/* DIV#archivos {width: 72px;
+	height: 32px;
+	background-image: url(img/archivos.gif);
+	position: absolute;
+	top: 9px;
+	left: 384px;} */
+
+DIV#autor {width: 72px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/smile.gif);
+	position: absolute;
+	top: 9px;
+	left: 384px;}
+
+.boton {width: 72px;
+	height: 32px;
+	padding: 0;
+	margin: 0;
+	border: 1px inset #FFFFFF;}
+
+.boton TR TD {text-align: center;
+	vertical-align: bottom;
+	font-size: 9px;}
+
+DIV#contenido {width: 77%;
+	position: absolute;
+	top: 80px;
+	left: 20%;
+	padding-bottom: 2em;}
+	
+/*
+DIV#contenido {position: absolute;
+	top: 80px;
+	left: 156px;
+	padding-right: 24px;}
+*/
+
+DIV#logocss {width: 190px;
+	height: 100px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/logocss.gif);
+	position: absolute;
+	top: 0px;
+	left: 500px;}
+
+DIV#select {width: 18%;
+	position: absolute;
+	top: 120px;
+	left: 4px;}
+
+DIV#select P {font-size: xx-small;
+color: #336699;
+text-align: left;
+text-indent: 0;}
+
+DIV#select P STRONG {font-size: x-small;
+color: #336699;}
+
+IMG {border:none}
+
+.centrado {text-align: center;
+text-indent: 0;}
+
+.derecha {text-align: right}
+
+/* Hoja de estilo del manual */
+
+BODY#manual {
+color:#000000; 
+background-color: #DDFFFF;
+background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/fondo.gif);
+margin: 0;
+padding: 0;
+scrollbar-face-color: #009999;
+scrollbar-arrow-color: #FFFFFF;
+scrollbar-base-color: #DDFFFF;
+scrollbar-highlight-color: #DDFFFF;
+
+scrollbar-darkshadow-color: #DDFFFF;
+scrollbar-track-color: #DDFFFF;
+scrollbar-shadow-color: #DDFFFF;
+scrollbar-3dlight-color: #DDFFFF;
+} 
+
+#manual DIV#menu {background-color:#FFCC99;
+	width: 315px;
+	height: 52px;
+	border: 2px outset #009999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;}
+
+#manual DIV#logo {width: 144px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/logo.gif);
+	position: absolute;
+	top: 8px;
+	left: 4px;}
+
+#manual DIV#home {width: 72px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/home.gif);
+	position: absolute;
+	top: 9px;
+	left: 156px;}
+
+#manual DIV#manual {width: 72px;
+	height: 32px;
+	background-image: url(file:///C|/Documents%20and%20Settings/Enrique/Configuraci%C3%B3n%20local/Archivos%20temporales%20de%20Internet/Content.IE5/NB6GF25S/img/libro.gif);
+	position: absolute;
+	top: 9px;
+	left: 232px;}
+
+#manual DIV.barra {position: absolute;
+	left: 400px;
+	top: 0;}
+
+#manual .barra TABLE TD#titulo {text-align: center;
+vertical-align: middle;
+font-size: large;
+font-weight: bold;
+color: #006666;}
+}
+
+#manual .barra TABLE TD.ico {
+width: 13px;
+background-color: #009999;
+vertical-align: middle;
+}
+
+#manual .barra TABLE TD.prev-next {
+width: 64px;
+vertical-align: middle;
+border: 1px solid #009999;
+}
+
+.cod {
+font-family: Courier, "Courier New", Monospace;
+text-align: left;
+line-height: 1.5;
+text-indent: 0;
+color: #006600;
+background-color: #FFFFCC;
+padding-left: 3em;}
+
+CODE {
+font-family: Courier, "Courier New", Monospace;
+font-size:   x-small;
+color: #0000CC;} 
+
+#manual #contenido A {
+text-decoration: none;
+color: #FFFFCC;
+background-color: #009999;
+padding: 0 0.5em;
+font-weight: bold;} 
+ 
+#manual #contenido A:hover, A:active {
+text-decoration: none;
+color: #FFFFFF;
+background-color: #000099;
+padding: 0 0.5em;
+font-weight: bold;}
+
+#manual #contenido DL, UL, OL, LI {
+font-size:   x-small;
+margin-left: 3em;}
+
+#manual #contenido TABLE {
+margin: 0;
+text-indent: 0;
+font-size: x-small;
+border: 3px ridge #FFCC99;}
+
+#manual #contenido DT, DD, DL, TD, TH {
+font-size: x-small;}
+
+#manual #contenido TD {padding: 6px;}
+#manual #contenido TH {background-color: black; color: white;border-bottom:#FFFFCC solid 1px;padding:2px;}
+
+#manual #contenido .prop {background-color: #FFFF00; 
+color: #CC0000;
+font-weight: bold;
+padding: 3px 6px; 
+border: solid #FF0000 1px;}
+#manual #contenido .val {background-color: #FFFFCC; border: solid #009999 1px;padding: 4px;}
+#manual #contenido .def {border: solid #FFCC99 1px;padding: 4px; background-color: #FFFFFF;}
+
+#manual #contenido PRE {
+padding: 4px;
+}
+
+#manual #contenido DL {font-weight: bold;}
+#manual #contenido DD {font-weight: normal;}
+
+#manual #contenido .temas {background-color:#FFCC99;
+	border: 2px outset #009999;
+	text-align: center;
+	font-size: x-small;
+	padding: 6px;}
+
+#manual #contenido .temas A {
+background-color: transparent;
+color: #006666; 
+} 
+

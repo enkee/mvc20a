@@ -1,6 +1,7 @@
 <?php
 
-ini_set('display_errors', 1);
+//ini_set('display_errors', E_ALL & ~E_NOTICE & ~E_WARNING);
+ini_set('display_errors',1);
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', realpath(dirname(__FILE__)) . DS);
@@ -21,6 +22,7 @@ try{
     //$registry->_dbs = new Database('sistema');
     $registry->_dbMod = $registry->dataBases();
     $registry->_acl = new ACL();
+    
     
     Bootstrap::run($registry->_request);
 }
